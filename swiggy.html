@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Swiggy Cart</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .header {
+            background-color: #fc8019;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .cart-container {
+            width: 80%;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+        .item-name {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .item-price {
+            color: #555;
+        }
+        .quantity {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .quantity button {
+            padding: 5px 10px;
+            border: none;
+            background-color: #fc8019;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .bill {
+            margin-top: 20px;
+        }
+        .bill-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 8px 0;
+        }
+        .total {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .checkout {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .checkout button {
+            background-color: #60b246;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .checkout button:hover {
+            background-color: #4fa13a;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Swiggy Cart</div>
+    <div class="cart-container">
+        <div class="cart-item">
+            <div>
+                <div class="item-name">Veg Burger</div>
+                <div class="item-price">₹120</div>
+            </div>
+            <div class="quantity">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+            </div>
+        </div>
+        <div class="cart-item">
+            <div>
+                <div class="item-name">French Fries</div>
+                <div class="item-price">₹80</div>
+            </div>
+            <div class="quantity">
+                <button>-</button>
+                <span>2</span>
+                <button>+</button>
+            </div>
+        </div>
+        <div class="bill">
+            <div class="bill-row">
+                <span>Item Total</span>
+                <span>₹280</span>
+            </div>
+            <div class="bill-row">
+                <span>Delivery Fee</span>
+                <span>₹40</span>
+            </div>
+            <div class="bill-row total">
+                <span>Total Payable</span>
+                <span>₹320</span>
+            </div>
+        </div>
+        <div class="checkout">
+            <button>Proceed to Checkout</button>
+        </div>
+    </div>
+</body>
+</html>
